@@ -1,0 +1,22 @@
+[project]
+name = "langchain-guardrails-project"
+version = "0.1.0"
+description = "Guardrails Studio: an interactive Streamlit tour of LangChain agent guardrails"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.8",
+    "langchain-openai>=1.7.3",
+    "langgraph>=1.2.19",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
